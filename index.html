@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="description" content="Frontend Mentor Challenge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Project tracking intro component</title>
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
+	<header>
+		<img src="images/logo.svg" alt="" width="32" height="32" class="logo">
+		<button id="menu-toggle" class="nav-header-button" aria-label="Toggle Menu">
+		  <span class="sr-only">Toggle Menu</span>
+		</button>
+		<nav id="nav-header" class="nav-header" aria-labelledby="menu-toggle" aria-expanded="false">
+		  <div class="overlay-see-through">
+			 <ul id="nav-header-list" class="nav-header-list">
+				<li><a href="#" class="nav-header-list-link">Product</a></li>
+				<li><a href="#" class="nav-header-list-link">Features</a></li>
+				<li><a href="#" class="nav-header-list-link">Pricing</a></li>
+				<li class="list-item-separator"><a href="#" class="nav-header-list-link link-login">Login</a></li>
+			 </ul>
+		  </div>
+		</nav>
+	 </header>
+	 <main>
+		<div class="illustration-container">
+			<img src="images/illustration-devices.svg" alt="" width="960" height="464" class="illustration">
+		</div>
 
-  New
-  Monograph Dashboard
+		<section class="intro">
+			<span class="new">New</span>
+			<h1>Monograph Dashboard</h1>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+			<h2>Powerful insights into your team</h2>
+			<p class="intro-paragraph">Project planning and time tracking for agile teams</p>
 
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+			<div class="call-to-action">
+				<a href="#" class="link-button">Schedule a demo</a>
+				<span class="call-to-action-text">to see a live preview</span>
+			</div>
+		</section>
+	 </main>
+	 <script src="js/default.js"></script>
 </body>
+
 </html>
